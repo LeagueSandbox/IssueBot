@@ -1,0 +1,27 @@
+{
+  "name": "issuebot",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [],
+  "author": "LeagueSandbox https://github.com/LeagueSandbox",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LeagueSandbox/IssueBot.git"
+  },
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "discord.js": "^10.0.1",
+    "github": "^7.1.0",
+    "node-opus": "^0.2.4",
+    "opusscript": "0.0.1",
+    "typescript": "^2.1.4"
+  }
+}
