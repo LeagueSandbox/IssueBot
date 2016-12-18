@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node issuebot.js",
     "test": "echo \"No tests specified\""
   },
   "keywords": [],

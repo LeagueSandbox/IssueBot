@@ -1,5 +1,5 @@
 "use strict";
-const index_1 = require("../../index");
+const issuebot_1 = require("../../issuebot");
 const command_1 = require("../command");
 const utils_1 = require("../utils");
 class IssueCommand extends command_1.default {
@@ -8,7 +8,7 @@ class IssueCommand extends command_1.default {
         if (!params) {
             return;
         }
-        index_1.default.gitHub.api.issues.create({
+        issuebot_1.default.gitHub.api.issues.create({
             owner: "LeagueSandbox",
             repo: params[0],
             title: params[1],

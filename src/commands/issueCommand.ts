@@ -1,4 +1,4 @@
-import Bot from '../../index'
+import Bot from '../../issuebot'
 import Command  from '../command'
 import parseArgs from '../utils'
 
