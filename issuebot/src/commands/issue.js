@@ -1,10 +1,10 @@
 "use strict";
-const issuebot_1 = require("../../issuebot");
-const command_1 = require("../command");
-const utils_1 = require("../utils");
-class IssueCommand extends command_1.default {
+const issuebot_1 = require("../issuebot");
+const discord_harmony_1 = require("discord-harmony");
+const discord_harmony_2 = require("discord-harmony");
+class IssueCommand extends discord_harmony_1.Command {
     execute() {
-        var params = utils_1.default(this.args, 3);
+        var params = discord_harmony_2.parseArgs(this.args);
         if (!params) {
             return;
         }
@@ -25,8 +25,7 @@ class IssueCommand extends command_1.default {
         this.message.reply(reply);
     }
 }
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = IssueCommand;
+exports.IssueCommand = IssueCommand;
 const ERROR_TEMPLATE = `
 An error occurred while creating the issue.
 Details:

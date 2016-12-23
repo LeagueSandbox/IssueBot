@@ -1,10 +1,10 @@
-import Bot from '../../issuebot'
-import Command  from '../command'
-import parseArgs from '../utils'
+import Bot from '../issuebot'
+import { Command }  from 'discord-harmony'
+import { parseArgs } from 'discord-harmony'
 
-export default class IssueCommand extends Command {
+export class IssueCommand extends Command {
   execute() {
-    var params = parseArgs(this.args, 3)
+    var params = parseArgs(this.args)
     if(!params) {
       return
     }

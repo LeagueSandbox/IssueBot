@@ -17,5 +17,4 @@ class GitHub {
         });
     }
 }
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = GitHub;
+exports.GitHub = GitHub;

@@ -1,6 +1,6 @@
 import GitHubApi = require('github')
 
-export default class GitHub {
+export class GitHub {
   api: GitHubApi
 
   constructor(token: string) {

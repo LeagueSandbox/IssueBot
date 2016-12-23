@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node issuebot.js",
-    "test": "echo \"No tests specified\""
+    "start": "node src/issuebot.js",
+    "test": "echo \"No tests specified\"",
+    "preinstall": "npm link ../harmony"
   },
   "keywords": [],
   "author": "LeagueSandbox https://github.com/LeagueSandbox",
@@ -15,10 +16,11 @@
     "url": "git://github.com/LeagueSandbox/IssueBot.git"
   },
   "devDependencies": {
+    "@types/node": "^6.0.53",
+    "typescript": "^2.1.4",
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "discord.js": "^10.0.1",
     "github": "^7.1.0",
     "node-opus": "^0.2.4",
     "opusscript": "0.0.1",

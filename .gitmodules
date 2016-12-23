@@ -1,0 +1,3 @@
+[submodule "harmony"]
+	path = harmony
+	url = git@github.com:MythicManiac/harmony.git
