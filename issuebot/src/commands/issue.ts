@@ -4,15 +4,14 @@ import { parseArgs } from 'discord-harmony'
 
 export class IssueCommand extends Command {
   execute() {
-    var params = parseArgs(this.args)
-    if(!params) {
+    if(!this.args) {
       return
     }
     Bot.gitHub.api.issues.create({
         owner: "LeagueSandbox",
-        repo: params[0],
-        title: params[1],
-        body: params[2]
+        repo: this.args[0],
+        title: this.args[1],
+        body: this.args[2]
       },
       (error, response) => this.handleGithubResponse(error, response)
     )
@@ -23,6 +22,7 @@ export class IssueCommand extends Command {
       let formattedError = JSON.stringify(error, null, 4)
       let reply = ERROR_TEMPLATE.replace('{PLACEHOLDER}', formattedError)
       this.message.reply(reply)
+      return
     }
     let reply = SUCCESS_TEMPLATE.replace('{PLACEHOLDER}', response.html_url)
     this.message.reply(reply)
