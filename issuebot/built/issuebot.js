@@ -13,6 +13,7 @@ class IssueBot extends Harmony.Bot {
         this.commandManager.addCommand('issue', commands_1.IssueCommand);
     }
 }
+exports.IssueBot = IssueBot;
 const instance = new IssueBot();
 instance.start(config.discordToken);
 Object.defineProperty(exports, "__esModule", { value: true });

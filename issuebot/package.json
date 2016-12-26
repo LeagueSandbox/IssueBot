@@ -2,9 +2,9 @@
   "name": "issuebot",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "built/issuebot.js",
   "scripts": {
-    "start": "node src/issuebot.js",
+    "start": "node built/issuebot.js",
     "test": "echo \"No tests specified\"",
     "preinstall": "npm link ../harmony"
   },
