@@ -33,7 +33,7 @@ const ISSUE_TEMPLATE = `
 {PLACEHOLDER}
 
 ---
-Beep, boop, I'm [a bot](https://github.com/LeagueSandbox/IssueBot)! This issue was created by @{NAME} in #{CHANNEL}.
+Beep, boop, I'm [a bot](https://github.com/LeagueSandbox/IssueBot)! This issue was created by @{USER} in #{CHANNEL}.
 `;
 const ERROR_TEMPLATE = `
 An error occurred while creating the issue.
