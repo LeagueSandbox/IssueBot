@@ -15,7 +15,7 @@ export class IssueCommand extends Command {
         owner: "LeagueSandbox",
         repo: this.args[0],
         title: this.args[1],
-        body: issueBody
+        body: <any>issueBody // Typings for the `github` package are incorrect, so we have to cast to any here.
       },
       (error, response) => this.handleGithubResponse(error, response)
     )
@@ -49,6 +49,7 @@ Details:
 {PLACEHOLDER}
 \`\`\`
 `
+
 const SUCCESS_TEMPLATE =
 `
 Issue created successfully! {PLACEHOLDER}

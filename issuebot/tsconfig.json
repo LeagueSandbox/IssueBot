@@ -14,12 +14,12 @@
         "noLib": false,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-        "types": ["node"]
+        "types": ["node"],
+        "outDir": "built"
     },
     "exclude": [
         "node_modules",
-        "typings/browser",
-        "typings/browser.d.ts"
+        "built"
     ],
     "compileOnSave": true,
     "buildOnSave": false,

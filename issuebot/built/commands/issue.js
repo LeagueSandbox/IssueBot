@@ -6,11 +6,15 @@ class IssueCommand extends discord_harmony_1.Command {
         if (!this.args) {
             return;
         }
+        let issueBody = ISSUE_TEMPLATE
+            .replace("{PLACEHOLDER}", this.args[2] || "_No content_")
+            .replace("{CHANNEL}", this.message.channel.name)
+            .replace("{USER}", this.message.author.username);
         issuebot_1.default.gitHub.api.issues.create({
             owner: "LeagueSandbox",
             repo: this.args[0],
             title: this.args[1],
-            body: this.args[2]
+            body: issueBody
         }, (error, response) => this.handleGithubResponse(error, response));
     }
     handleGithubResponse(error, response) {
@@ -25,6 +29,12 @@ class IssueCommand extends discord_harmony_1.Command {
     }
 }
 exports.IssueCommand = IssueCommand;
+const ISSUE_TEMPLATE = `
+{PLACEHOLDER}
+
+---
+Beep, boop, I'm [a bot](https://github.com/LeagueSandbox/IssueBot)! This issue was created by @{NAME} in #{CHANNEL}.
+`;
 const ERROR_TEMPLATE = `
 An error occurred while creating the issue.
 Details:

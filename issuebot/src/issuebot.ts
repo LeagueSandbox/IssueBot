@@ -4,7 +4,7 @@ import * as Harmony from 'discord-harmony'
 import { GitHub } from './github'
 import { IssueCommand } from './commands'
 
-class IssueBot extends Harmony.Bot {
+export class IssueBot extends Harmony.Bot {
   gitHub: GitHub
 
   constructor() {
