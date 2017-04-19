@@ -4,7 +4,8 @@
   "description": "",
   "main": "built/issuebot.js",
   "scripts": {
-    "start": "node built/issuebot.js",
+    "watch": "tsc -p . -w",
+    "start": "tsc -p . && node built/issuebot.js",
     "test": "echo \"No tests specified\"",
     "preinstall": "npm link ../harmony"
   },
