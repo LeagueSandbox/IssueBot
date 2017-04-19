@@ -17,11 +17,14 @@
         "types": ["node"],
         "outDir": "built"
     },
+    "include": [
+      "src/**/*"
+    ],
     "exclude": [
         "node_modules",
         "built"
     ],
-    "compileOnSave": true,
+    "compileOnSave": false,
     "buildOnSave": false,
     "atom": {
         "rewriteTsconfig": false

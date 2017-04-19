@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const issuebot_1 = require("../issuebot");
 const discord_harmony_1 = require("discord-harmony");
 class IssueCommand extends discord_harmony_1.Command {

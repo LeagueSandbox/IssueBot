@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const config = require('../config.json');
 const Harmony = require("discord-harmony");
 const github_1 = require("./github");
@@ -16,5 +17,4 @@ class IssueBot extends Harmony.Bot {
 exports.IssueBot = IssueBot;
 const instance = new IssueBot();
 instance.start(config.discordToken);
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = instance;
