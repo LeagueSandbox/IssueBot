@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const GitHubApi = require("github");
 class GitHub {
     constructor(token) {
