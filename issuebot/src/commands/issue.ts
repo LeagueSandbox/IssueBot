@@ -1,6 +1,5 @@
 import Bot from '../issuebot'
 import { Command }  from 'discord-harmony'
-import { parseArgs } from 'discord-harmony'
 
 export class IssueCommand extends Command {
   execute() {
