@@ -7,7 +7,7 @@
     "watch": "tsc -p . -w",
     "start": "tsc -p . && node built/issuebot.js",
     "test": "echo \"No tests specified\"",
-    "preinstall": "npm link ../harmony"
+    "postinstall": "npm link ../harmony"
   },
   "keywords": [],
   "author": "LeagueSandbox https://github.com/LeagueSandbox",
