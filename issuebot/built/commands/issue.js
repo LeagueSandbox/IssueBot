@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const issuebot_1 = require("../issuebot");
 const discord_harmony_1 = require("discord-harmony");
+const config = require('../../config.json');
 class IssueCommand extends discord_harmony_1.Command {
     execute() {
         if (!this.args) {
@@ -12,7 +13,7 @@ class IssueCommand extends discord_harmony_1.Command {
             .replace("{CHANNEL}", this.message.channel.name)
             .replace("{USER}", this.message.author.username);
         issuebot_1.default.gitHub.api.issues.create({
-            owner: "LeagueSandbox",
+            owner: config.name,
             repo: this.args[0],
             title: this.args[1],
             body: issueBody
