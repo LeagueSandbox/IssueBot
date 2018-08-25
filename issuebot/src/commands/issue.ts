@@ -43,6 +43,8 @@ Beep, boop, I'm [a bot](https://github.com/LeagueSandbox/IssueBot)! This issue w
 
 const ERROR_TEMPLATE =
 `
+Command should be: !issue {Repository} {Title} {Message}
+Example: !issue "GameServer" "Make a beginner bot AI script" "Make a game script to control a bot champion. Buy items, go to lane, try to beat Nexus."
 An error occurred while creating the issue.
 Details:
 \`\`\`
