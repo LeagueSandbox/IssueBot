@@ -6,6 +6,8 @@
   "scripts": {
     "watch": "tsc -p . -w",
     "start": "tsc -p . && node built/issuebot.js",
+    "build": "tsc -p .",
+    "start-nobuild": "node built/issuebot.js",
     "test": "echo \"No tests specified\"",
     "postinstall": "npm link ../harmony"
   },

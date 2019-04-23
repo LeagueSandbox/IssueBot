@@ -1,6 +1,6 @@
 import Bot from '../issuebot'
 import { Command }  from 'discord-harmony'
-const config = require('../../config.json')
+import { config } from '../config'
 
 export class IssueCommand extends Command {
   execute() {
@@ -12,7 +12,7 @@ export class IssueCommand extends Command {
       .replace("{CHANNEL}", this.message.channel.name)
       .replace("{USER}", this.message.author.username)
     Bot.gitHub.api.issues.create({
-        owner: config.name,
+        owner: config.githubName,
         repo: this.args[0],
         title: this.args[1],
         body: <any>issueBody // Typings for the `github` package are incorrect, so we have to cast to any here.

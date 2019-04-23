@@ -1,8 +1,7 @@
-const config = require('../config.json')
-
 import * as Harmony from 'discord-harmony'
 import { GitHub } from './github'
 import { IssueCommand } from './commands'
+import { config } from './config'
 
 export class IssueBot extends Harmony.Bot {
   gitHub: GitHub

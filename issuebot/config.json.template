@@ -1,5 +1,5 @@
 {
   "discordToken": "<insert discord token here>",
   "githubToken": "<insert github token here>",
-  "name": "<insert github name here>"
+  "githubName": "<insert github name here>"
 }

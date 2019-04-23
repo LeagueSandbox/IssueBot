@@ -4,7 +4,7 @@ A Discord bot for creating GitHub issues.
 
 ## Install Instructions
 
-**Note:** Due to [NPM package linking](https://docs.npmjs.com/cli/link) requiring root access on system-wide NPM installations, it's recommended to use [NVM](https://github.com/creationix/nvm). 
+**Note:** Due to [NPM package linking](https://docs.npmjs.com/cli/link) requiring root access on system-wide NPM installations, it's recommended to use [NVM](https://github.com/creationix/nvm).
 
 Clone the repository:
 
@@ -35,7 +35,7 @@ $ cp config.json.template config.json
 
 Edit `config.json` and insert your Discord token, GitHub token and your GitHub user/organization name.
 
-**Note:** The user/organization name needs to be from the same account of which you generated the personal access token for.  
+**Note:** The user/organization name needs to be from the same account of which you generated the personal access token for.
 
 Run the bot:
 
@@ -67,3 +67,12 @@ To use it, type the following in Discord where the bot can read it:
 ```
 
 Replace REPO with the repository you have access to. A new GitHub issue should be created through the bot.
+
+
+## Docker
+
+You can provide the required options via environment variables as follows:
+
+- `GITHUB_NAME`: The github user/organization name
+- `GITHUB_TOKEN`: The github user access token
+- `DISCORD_TOKEN`: The discord bot token
